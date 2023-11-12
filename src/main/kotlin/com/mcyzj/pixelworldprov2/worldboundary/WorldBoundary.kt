@@ -3,6 +3,7 @@ package com.mcyzj.pixelworldprov2.worldboundary
 import com.mcyzj.pixelworldpro.PixelWorldPro
 import com.mcyzj.pixelworldpro.api.Expansion
 import com.mcyzj.pixelworldpro.api.objects.Config
+import com.mcyzj.pixelworldpro.expansion.core.level.WorldLevelChange
 import org.bukkit.Bukkit
 
 
@@ -13,7 +14,6 @@ class WorldBoundary : Expansion() {
     private var config = Config.INSTANCE.buildConfig("Config.yml")
     override fun onEnable() {
         logger.info("加载PixelWorldPro官方扩展-WorldBoundary世界边界")
-        PixelWorldPro.instance.regEvent(Listen())
         Bukkit.getPluginManager().registerEvents(Listen(), PixelWorldPro.instance)
     }
 
