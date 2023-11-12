@@ -1,0 +1,5 @@
+main: com.mcyzj.pixelworldprov2.worldboundary.WorldBoundary
+name: "WorldBoundary"
+api: 1
+author: "MC鱼子酱"
+version: "1.0.0"
